@@ -90,7 +90,7 @@ choices, not implementation details. If a change would alter any of them,
 say so explicitly rather than folding it into a refactor.
 
 **Do not invent numbers.** Never write a plausible-looking result, sample size,
-or coefficient into a manuscript, table, or comment. If a value should come
+or coefficient into a report, table, or comment. If a value should come
 from the data, it comes from running the code.
 
 **Flag, do not fix, apparent statistical errors.** If an analysis looks wrong —

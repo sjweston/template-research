@@ -29,7 +29,7 @@ dat <- readRDS(file.path(path_processed, "analysis_sample.rds"))
 # --- Primary analysis --------------------------------------------------------
 # If your study is preregistered, say so and link the hypothesis. If an
 # analysis was not preregistered, label it exploratory -- here, in the code,
-# not only in the manuscript.
+# not only in the write-up.
 
 # H1 (preregistered): [state the hypothesis]
 # model_h1 <- lm(outcome ~ condition + covariate, data = dat)

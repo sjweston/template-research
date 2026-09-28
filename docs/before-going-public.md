@@ -105,7 +105,7 @@ Someone landing here from a paper should be able to understand the project witho
 - [ ] Added a `CITATION.cff` file so GitHub displays a "Cite this repository" button
 - [ ] Linked the repository to [Zenodo](https://zenodo.org) to mint a DOI, if the work should be formally citable
 - [ ] Cross-linked with the OSF project, if there is one
-- [ ] Added the repository URL to the manuscript
+- [ ] Added the repository URL to the write-up
 
 ---
 

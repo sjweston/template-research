@@ -37,7 +37,7 @@ Since results are not in the repository, collaborators who do not run R will not
 
 ## Naming
 
-Number outputs to match the order they appear in the manuscript, so "Figure 2"
+Number outputs to match the order they appear in the report, so "Figure 2"
 means one specific file:
 
 ```

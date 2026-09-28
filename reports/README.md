@@ -48,7 +48,7 @@ than it looks:
 | Format | Renders on github.com? | Notes |
 |---|---|---|
 | **`gfm`** (GitHub markdown) | **Yes, natively** | Best default. Also diffs as plain text, so you can see what changed between versions. |
-| `pdf` | Yes, inline viewer | Good for emailing or attaching to a manuscript. Requires a LaTeX install (`tinytex::install_tinytex()`). |
+| `pdf` | Yes, inline viewer | Good for emailing or attaching to a write-up. Requires a LaTeX install (`tinytex::install_tinytex()`). |
 | `html` | **No** | GitHub shows the raw source, not the page. Fine locally, useless to the colleague you are trying to reach. |
 
 Unless you have a reason to do otherwise, render to `gfm`. Someone can then
@@ -100,8 +100,8 @@ people will quote it.
 
 ## What does not go here
 
-- **Manuscripts.** Those live in Google Docs or Word; see
-  [`../manuscript/README.md`](../manuscript/README.md).
+- **Write-ups for publication.** Those live in Google Docs or Word, outside
+  this repository.
 - **Raw model output.** Dumping `summary(model)` into a document is not a
   report. Report the numbers a reader needs, in a table.
 - **Anything with participant-level rows.** See the checklist above.

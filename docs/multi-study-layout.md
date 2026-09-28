@@ -64,8 +64,7 @@ project-name/
 │       └── ... same structure ...
 │
 ├── materials/                 Instruments, organized by study
-├── docs/                      Project-level docs
-└── manuscript/                Organized by study or by paper
+└── docs/                      Project-level docs
 ```
 
 ---

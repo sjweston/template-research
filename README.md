@@ -68,7 +68,6 @@ Expected run time: [X minutes]
 ├── reports/         Rendered summaries for people who don't run R — tracked
 ├── materials/       Instruments, protocols, consent forms
 ├── docs/            FAQ, codebook, decisions log, guides
-├── manuscript/      Links to drafts; final PDFs
 ├── CONVENTIONS.md   How we name things and write code
 └── SETUP.md         What to do when you first create this repository
 ```
@@ -97,12 +96,6 @@ This repository is **private**. Before making it public, work through [`docs/bef
 - **Code** (everything in `code/`) is licensed under the [MIT License](LICENSE) — free to use, modify, and build on, with attribution.
 - **Materials, documentation, and figures** are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to share and adapt with credit.
 - **Data** is governed by the IRB protocol and any data use agreement covering it, not by these licenses. A license here does not grant anyone rights to data we do not have the right to redistribute.
-
----
-
-## How to cite
-
-> [Author names]. ([Year]). *[Project title]* [Data set / Computer software]. foundry10. [DOI or repository URL]
 
 ---
 
