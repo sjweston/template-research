@@ -41,8 +41,9 @@ See [`docs/faq.md`](docs/faq.md).
 ```
 00_setup.R      Packages, paths, seed. Sourced by everything else.
 01_clean.R      Raw data → analysis-ready data
-02_analyze.R    Models
-03_figures.R    Plots
+02_derive.R     Scale scores, composites, recodes
+03_analyze.R    Models, figures, tables
+04_report.R     Renders the reports
 run_all.R       Runs everything in order
 ```
 
@@ -163,7 +164,7 @@ Options, in order of preference:
 
 ## 13. Record your environment
 
-Package versions change, and results occasionally change with them. `02_analyze.R` writes `sessionInfo()` to `docs/session-info.txt`, so that a discrepancy two years from now has a starting point.
+Package versions change, and results occasionally change with them. `03_analyze.R` writes `sessionInfo()` to `docs/session-info.txt`, so that a discrepancy two years from now has a starting point.
 
 If you want stronger guarantees there is a ladder: a dated CRAN snapshot (one
 line), then `renv` for exact versions, then `rig` if the R version itself

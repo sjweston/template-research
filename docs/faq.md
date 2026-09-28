@@ -129,7 +129,7 @@ If a step tells you to open org settings and there is no Settings tab, you are p
 
 Probably not at first, and the template does not require it.
 
-`02_analyze.R` already writes `docs/session-info.txt`, which records the package versions your results were produced with. That is honest and free, but it is a *record*, not a way to recreate the environment — it tells a future reader what you used without helping them get it.
+`03_analyze.R` already writes `docs/session-info.txt`, which records the package versions your results were produced with. That is honest and free, but it is a *record*, not a way to recreate the environment — it tells a future reader what you used without helping them get it.
 
 Three steps up the ladder, take them when the project justifies it:
 

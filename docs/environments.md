@@ -12,7 +12,7 @@ to a two-week descriptive analysis is a bad trade.
 
 | Your project | What to use |
 |---|---|
-| Short descriptive analysis, done in a month, unlikely to be revisited | Nothing. `docs/session-info.txt` is already written by `02_analyze.R`. |
+| Short descriptive analysis, done in a month, unlikely to be revisited | Nothing. `docs/session-info.txt` is already written by `03_analyze.R`. |
 | Will be revisited, or has several collaborators | A dated repository (one line — see below) |
 | Preregistered, published, or externally audited | `renv` |
 | Needs a specific R version, or you juggle several projects | `rig`, alongside either of the above |

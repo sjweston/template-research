@@ -52,7 +52,8 @@ project-name/
 │   │   ├── README.md             This study specifically
 │   │   ├── code/
 │   │   │   ├── 01_clean.R
-│   │   │   ├── 02_analyze.R
+│   │   │   ├── 02_derive.R
+│   │   │   ├── 03_analyze.R
 │   │   │   └── run_all.R
 │   │   ├── data/processed/       Study-specific derived data
 │   │   ├── output/
