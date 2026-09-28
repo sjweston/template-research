@@ -39,6 +39,7 @@ path_raw <- here("data", "raw")
 path_processed <- here("data", "processed")
 path_figures <- here("output", "figures")
 path_tables <- here("output", "tables")
+path_reports <- here("output", "reports")
 
 
 # --- Reproducibility ---------------------------------------------------------
@@ -51,6 +52,10 @@ set.seed(20260827) # convention: the date you started the project
 
 
 # --- Options -----------------------------------------------------------------
+
+# Pin package versions to a date by pointing CRAN at a dated snapshot. See
+# docs/environments.md.
+# options(repos = c(CRAN = "https://packagemanager.posit.co/cran/YYYY-MM-DD"))
 
 options(
   stringsAsFactors = FALSE,

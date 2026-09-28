@@ -1,15 +1,15 @@
 # =============================================================================
-# 02_analyze.R
+# 03_analyze.R
 #
 # Runs the analyses and writes figures and tables to output/.
 #
-# Input:  data/processed/analysis_sample.rds
+# Input:  data/processed/derived.rds
 # Output: output/figures/, output/tables/
 # =============================================================================
 
 source(here::here("code", "00_setup.R"))
 
-dat <- readRDS(file.path(path_processed, "analysis_sample.rds"))
+dat <- readRDS(file.path(path_processed, "derived.rds"))
 
 
 # --- Descriptives ------------------------------------------------------------

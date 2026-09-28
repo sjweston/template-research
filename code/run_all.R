@@ -15,11 +15,9 @@
 source(here::here("code", "00_setup.R"))
 
 source(here("code", "01_clean.R"))
-source(here("code", "02_analyze.R"))
-
-# Optional: re-render the summary report so it never shows stale numbers.
-# Requires the quarto R package and a Quarto installation.
-# quarto::quarto_render(here("reports", "summary.qmd"))
+source(here("code", "02_derive.R"))
+source(here("code", "03_analyze.R"))
+source(here("code", "04_report.R"))
 
 message(
   "\n--- Pipeline complete: ",
