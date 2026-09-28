@@ -1,0 +1,10 @@
+# Copy the variables you need into ~/.Renviron (the HOME file, not this
+# project). R reads ~/.Renviron in every session, so a key set there works in
+# every project. Do not create a project-level .Renviron: R reads that one
+# INSTEAD OF the home file, not in addition to it, so keys would have to be
+# duplicated.
+#
+# Restart R after editing. Read a value with Sys.getenv("ANTHROPIC_API_KEY").
+
+ANTHROPIC_API_KEY=
+OPENAI_API_KEY=
