@@ -1,35 +1,58 @@
 # Setup checklist
 
-You have just created a repository from the foundry10 research template. This setup takes about fifteen minutes and only happens once.
+You have just created a repository from Sara Weston's analysis template. This setup takes about fifteen minutes and only happens once.
 
-If you have never used GitHub before, work through [`docs/github-guide.md`](docs/github-guide.md) first — it covers steps 1 and 2 in much more detail, with no assumed background.
+If you have never used GitHub before, work through [`docs/github-guide.md`](docs/github-guide.md) first — it covers step 1 in much more detail, with no assumed background.
 
 ---
 
-## 1. Create and clone
+## 1. Create
 
-- [ ] Created the repository from the template using the green **Use this template** button (not "Fork" — see the guide for why the difference matters)
+Either use the green **Use this template** button (not "Fork" — see the guide for why the difference matters), or from a terminal:
+
+```bash
+gh repo create foundry10-research/<project-name> --template sjweston/template-research --private --clone
+```
+
 - [ ] Named it descriptively and permanently: lowercase, hyphens, no spaces. `teen-media-use-2026`, not `study1` or `Sara's Project`
 - [ ] Confirmed visibility is set to **Private**. Every foundry10 research repository starts private. You can make it public later; you cannot un-publish something that has already been seen.
-- [ ] Added collaborators (Settings → Collaborators and teams)
-- [ ] Cloned it to your own computer with GitHub Desktop
+- [ ] Cloned it to your own computer
+- [ ] Added collaborators, if any (Settings → Collaborators and teams)
 
 ---
 
 ## 2. Make it yours
 
 - [ ] Renamed `template.Rproj` to `[your-project-name].Rproj`
-- [ ] Filled in the study information table in [`README.md`](README.md)
-- [ ] Deleted the grey "This is the foundry10 research project template" box
-      at the top of `README.md`
+- [ ] Filled in the study information table in [`README.md`](README.md), and the `[PROJECT NAME]` in the reproduction steps
+- [ ] Deleted the grey "This is Sara Weston's analysis template" box at the top of `README.md`
 - [ ] Replaced the project description at the top of `README.md`
 - [ ] Filled in the Google Drive link and access contact in [`data/README.md`](data/README.md)
-- [ ] Updated the author and date headers in `code/00_setup.R`
+- [ ] Updated the project, author, and date headers in `code/00_setup.R`
 - [ ] Changed the seed in `code/00_setup.R` to today's date
 - [ ] Filled in `[YEAR]` and the author names in [`LICENSE`](LICENSE)
-- [ ] Deleted `code/functions/example_function.R` once you have written a real function
-- [ ] Filled in the title and author in `reports/summary.qmd`, or deleted it if you will not be writing reports
+- [ ] Filled in the title and author in `reports/summary.qmd`, or deleted it (and `code/04_report.R`) if you will not be writing reports
 - [ ] Deleted any folder you genuinely will not use. Do not delete `data/` or its `.gitignore` protection.
+- [ ] Created the vault project note at `~/Documents/notebook/projects/<project name>.md` with the frontmatter below. The `repo:` key is how the daily-wrap-up skill finds the project; without it the skill reports `PROJECT: UNRESOLVED`.
+
+  ```yaml
+  ---
+  type: project
+  status: active
+  created: YYYY-MM-DD
+  PI: "[[Name]]"
+  collaborators:
+    - "[[Name]]"
+  role: Analyst
+  repo: ~/Documents/GitHub/<project-name>
+  repo_url: https://github.com/foundry10-research/<project-name>
+  tags:
+    - project
+  ---
+  ```
+
+- [ ] Confirmed `~/.Renviron` holds every variable listed in [`.Renviron.example`](.Renviron.example) that the project will use
+- [ ] If the project needs Python, created the environment with `python -m venv .venv && .venv/bin/pip install -r requirements.txt`. For a Python `.env` file, copy `env.example` to `.env`.
 
 ---
 
@@ -49,8 +72,8 @@ If it does appear, stop and ask for help before committing anything. Something a
 
 ## 4. First commit
 
-- [ ] Made your first commit in GitHub Desktop with a message like `Set up repository from template`
-- [ ] Clicked **Push origin**
+- [ ] Made your first commit with a message like `Set up repository from template`
+- [ ] Pushed
 - [ ] Refreshed the repository on github.com and confirmed your changes are there
 
 ---
@@ -59,6 +82,7 @@ If it does appear, stop and ask for help before committing anything. Something a
 
 - [ ] Skimmed [`CONVENTIONS.md`](CONVENTIONS.md) — it is short, and it is the difference between a repository someone can pick up in a year and one nobody can
 - [ ] Opened [`docs/decisions.md`](docs/decisions.md) and made your first entry, even if it is just the date you started
+- [ ] Wrote the first `docs/orientation.md` by hand, or ran the daily-wrap-up skill at the end of day one
 
 ---
 
