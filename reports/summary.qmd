@@ -13,6 +13,8 @@ execute:
   message: false
 ---
 
+<!-- Prose follows ~/.claude/weston_research_writing_style.md. This document is external-facing: no decisions, notes, requests or file paths in rendered text. -->
+
 ```{r setup}
 source(here::here("code", "00_setup.R"))
 dat <- readRDS(file.path(path_processed, "derived.rds"))

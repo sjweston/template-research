@@ -209,6 +209,13 @@ output/**
 !reports/**/*_files/
 !reports/**/*_files/**
 
+# ...but not Quarto's HTML scaffolding. Quarto writes Bootstrap, tippy,
+# clipboard.js and friends into libs/ even when the report renders to gfm --
+# roughly 900K of assets a Markdown report never references. Figures sit
+# beside libs/, not inside it, so re-ignoring this folder costs nothing.
+
+reports/**/*_files/libs/
+
 # The data rules still apply inside reports/: a stray .csv or .rds in this
 # folder stays ignored. Only the report and its figures are tracked.
 
