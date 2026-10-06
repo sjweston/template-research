@@ -147,6 +147,35 @@ have context about the study design that this repository does not contain.
 deviations from it as significant. Analyses that were not preregistered should
 be labeled exploratory in the code, not just in the write-up.
 
+**Planned analyses the data give reason to doubt: show everything,
+de-emphasize some.** Sometimes the data reveal a problem that makes a planned
+(or preregistered) analysis hard to interpret. Examples: a variable coded
+differently across waves or sites, a measure with floor or ceiling effects or
+low reliability, failed measurement invariance, careless responding, a failed
+manipulation check, differential attrition, a sparse subgroup, no covariate
+overlap, a model that will not converge, or a result so large it suggests an
+error. Do not drop the affected analysis and do not present it at full
+strength. Run and show all of them, put the substantive weight on the analyses
+without the problem, and visually de-emphasize the others in figures and
+tables (lighter alpha, gray or dashed lines, hollow points, a muted table row,
+a marker in the legend or note). Say in the caption or note which results are
+de-emphasized and why, and quantify the problem when outside information or a
+diagnostic allows it.
+
+The trigger is always a diagnostic about measurement, design, or fit, never
+the direction or significance of the result. Where possible, state the
+criterion before looking at outcomes, carry the flag as a column in the
+derived data (for example `coding_comparable`) so figure code reads it rather
+than hard-coding wave or group names, and log the criterion in
+`docs/decisions.md`. If the concern arose after seeing results, label it as
+such. If you notice a possible problem of this kind, flag it to Sara; do not
+apply the de-emphasis on your own.
+
+**Reverse causal questions and non-randomized design changes.** If the project
+asks why an outcome changed, or compares waves or sites whose instruments,
+mode, or sampling differ, read `docs/causal-inference.md` before planning the
+analysis. It does not apply to every study.
+
 **Log decisions.** When a substantive analytic choice is made, add an entry to
 `docs/decisions.md`.
 
